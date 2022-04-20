@@ -45,9 +45,9 @@ body {
   }
 }
 .card__image {
-  background-color: #AB5CDB;
+  background-color: #aa5cdb;
   background-image: url("../images/image-header-mobile.jpg");
-  background-blend-mode: overlay;
+  background-blend-mode: multiply;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -87,7 +87,7 @@ body {
     flex-direction: row;
   }
   .card__stats :not(:last-child) {
-    padding-right: 3.75rem;
+    padding-right: 4rem;
   }
 }
 .card__text {

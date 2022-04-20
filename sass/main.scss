@@ -43,9 +43,9 @@ body {
   }
 
   &__image {
-    background-color: #AB5CDB;
+    background-color: hsl(277, 64%, 61%);
     background-image: url("../images/image-header-mobile.jpg");
-    background-blend-mode: overlay;
+    background-blend-mode: multiply;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -86,7 +86,7 @@ body {
       @media screen and (min-width: 800px) {
         flex-direction: row;
         :not(:last-child) {
-          padding-right: 3.75rem;
+          padding-right: 4rem;
       }
     }
   }
