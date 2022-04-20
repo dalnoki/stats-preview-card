@@ -31,6 +31,7 @@ body {
 @media screen and (min-width: 800px) {
   .card {
     flex-direction: row-reverse;
+    height: 27.875rem;
     max-width: 69.375rem;
   }
 }
@@ -46,7 +47,7 @@ body {
 .card__image {
   background-color: #AB5CDB;
   background-image: url("../images/image-header-mobile.jpg");
-  background-blend-mode: multiply;
+  background-blend-mode: overlay;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -115,6 +116,7 @@ body {
 @media screen and (min-width: 800px) {
   .card__title {
     text-align: left;
+    width: 89%;
   }
 }
 .card__title span {

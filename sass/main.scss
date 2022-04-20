@@ -29,6 +29,7 @@ body {
 
   @media screen and (min-width: 800px) {
     flex-direction: row-reverse;
+    height: 27.875rem;
     max-width: 69.375rem;
   }
 
@@ -44,7 +45,7 @@ body {
   &__image {
     background-color: #AB5CDB;
     background-image: url("../images/image-header-mobile.jpg");
-    background-blend-mode: multiply;
+    background-blend-mode: overlay;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -115,6 +116,7 @@ body {
 
     @media screen and (min-width: 800px){
       text-align: left;
+      width: 89%;
     }
 
     span {
