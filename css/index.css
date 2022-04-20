@@ -114,7 +114,7 @@ body {
 }
 @media screen and (min-width: 800px) {
   .card__title {
-    text-align: center;
+    text-align: left;
   }
 }
 .card__title span {
