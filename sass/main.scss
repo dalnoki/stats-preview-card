@@ -1,0 +1,136 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  background: #0A0C1C;
+  color: white;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  padding-top: 5.5rem;
+
+  @media screen and (min-width: 800px) {
+    padding-top: 11rem;
+  }
+}
+
+.card {
+  background-color: #1B1937;
+  border-radius: .5rem;
+  display: flex;
+  flex-direction: column;
+  max-width: 20.43rem;
+  margin: 0 auto;
+  overflow: hidden;
+
+  @media screen and (min-width: 800px) {
+    flex-direction: row-reverse;
+    max-width: 69.375rem;
+  }
+
+  &__body {
+    flex: 1;
+    padding: 2.5rem 1.98rem 2rem;
+
+    @media screen and (min-width: 800px) {
+      padding: 4.44rem 0 3.865rem 4.5rem;
+    }
+  }
+
+  &__image {
+    background-color: #AB5CDB;
+    background-image: url("../images/image-header-mobile.jpg");
+    background-blend-mode: multiply;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    flex: 1;
+    min-height: 15rem;
+
+    @media screen and (min-width: 800px) {
+      background-image: url("../images/image-header-desktop.jpg");
+    }
+
+  }
+
+  &__stat {
+    padding-bottom: 1.5rem;
+
+    @media screen and (min-width: 800px) {
+      padding-bottom: 0;
+    }
+
+    & > p > span {
+      display: block;
+      font-family: 'Lexend Deca', sans-serif;;
+      font-size: .75rem;
+      opacity: .6;
+    }
+
+    & > p {
+      font-size: 1.5rem;
+      font-weight: 700;
+    }
+  }
+
+  &__stats {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+      @media screen and (min-width: 800px) {
+        flex-direction: row;
+        :not(:last-child) {
+          padding-right: 3.75rem;
+      }
+    }
+  }
+
+  &__text {
+    font-size: .9rem;
+    line-height: 1.5rem;
+    max-width: 16.5rem;
+    opacity: .75;
+    padding-bottom: 2.5rem ;
+    text-align: center;
+    width: 99%;
+
+    @media screen and (min-width: 800px){
+      font-size: 1rem;
+      max-width: 23.375rem;
+      padding-bottom: 4.5rem;
+      text-align: left;
+    }
+  }
+
+  &__title {
+    font-size: 2.25rem;
+    font-weight: 700;
+    padding-bottom: 1.5rem;
+    text-align: center;
+
+    @media screen and (min-width: 800px){
+      text-align: center;
+    }
+
+    span {
+      color: #AB5CDB;
+      text-align: center;
+    }
+  }
+}
+
+
+.attribution {
+  color: #AB5CDB;
+  padding-top: 1rem;
+  font-size: .7rem; text-align: center;
+
+  a {
+    color: hsl(228, 45%, 44%);
+  }
+}
